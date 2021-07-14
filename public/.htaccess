@@ -1,0 +1,15 @@
+#RewriteOptions InheritBefore
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    #RewriteRule ^css/theme/([\w]+)/(.*)$  ../src/themes/$1/assets/css/$2  [L]
+
+    # Handle Front Controller
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteRule ^backoffice/(.*)$  index.php?_url=$1&outputMode=webApp [L,QSA]
+
+    #RewriteRule ^img/(.*)$ /backoffice/assets/img/$1 [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$  index.php?_url=$1 [L,QSA]
+</IfModule>

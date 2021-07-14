@@ -1,0 +1,41 @@
+{
+    "name": "smartlimon/alfred",
+    "description": "Universe PHP Framework Documentation",
+    "keywords": ["universe", "universe php"],
+    "license": "MIT",
+    "type": "project",
+    "authors":
+    [
+        {
+            "name": "Volkan ŞENGÜL",
+            "email": "iletisim@volkansengul.com",
+            "role": "Owner"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:volkansengul/universe-pre.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "volkansengul/universe-pre": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "autoload-dev": {
+    },
+    "extra": {
+    },
+    "scripts": {
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

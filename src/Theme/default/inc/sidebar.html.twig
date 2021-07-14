@@ -1,0 +1,21 @@
+
+<!-- Sidebar Navigation
+============================ -->
+<div class="idocs-navigation bg-light">
+    <ul class="nav flex-column">
+        {% for key, item in sidebar %}
+            <li class="nav-item">
+                <a class="nav-link {% if activePage == item.uri %}active{% endif %}" href="{{ item.uri }}">{{ key }}</a>
+                {% if item.sub %}
+                <ul class="nav flex-column">
+                {% for _key, _item in item.sub %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if activePage == _item %}active{% endif %}" href="/{{ _item }}">{{ _key }}</a>
+                    </li>
+                {% endfor %}
+                {% endif %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
