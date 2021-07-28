@@ -29,9 +29,87 @@ class DocsController extends Controller {
                 'Architecture Concepts'=>[
                     'uri'=>'architecture',
                     'sub'=>[
-                        'Request Lifecycle'=>'lifecycle'
+                        'Request Lifecycle'=>'lifecycle',
+                        'Service Container'=>'service-container',
+                        'Service Providers'=>'service-providers',
+                        'Facades'=>'facades'
                     ]
-                ]
+                ],
+                'The Basics'=>[
+                    'uri'=>'the-basics',
+                    'sub'=>[
+                        'Routing'=>'routing',
+                        'Middleware'=>'Middleware',
+                        'CSRF Protection'=>'csrf-protection',
+                        'Controllers'=>'controllers',
+                        'Request'=>'request',
+                        'Response'=>'response',
+                        'Render'=>'render',
+                        'Twig Templates'=>'twig-templates',
+                        'URL Generation'=>'url-generation',
+                        'Session'=>'session',
+                        'Validation'=>'validation',
+                        'Error Handling'=>'error-handling',
+                        'Logging'=>'logging',
+                    ]
+                ],
+                'Digging Deeper'=>[
+                    'uri'=>'digging-deeper',
+                    'sub'=>[
+                        'Console Commands'=>'console-commands',
+                        'Cache'=>'cache',
+                        'Collections'=>'collections',
+                        'Contracts'=>'contracts',
+                        'File Storage'=>'file-storage',
+                        'Helpers'=>'helpers',
+                        'HTTP Client'=>'http-client',
+                        'Localization'=>'localization',
+                        'Mail'=>'mail'
+                    ]
+                ],
+                'Security'=>[
+                    'uri'=>'Security',
+                    'sub'=>[
+                        'Authentication'=>'authentication',
+                        'Authorization'=>'authorization',
+                        'Email Verification'=>'email-verification',
+                        'Encryption'=>'encryption',
+                        'Hashing'=>'hashing',
+                        'Resetting Passwords'=>'resetting-passwords',
+                        
+                    ]
+                ],
+                'Database'=>[
+                    'uri'=>'Database',
+                    'sub'=>[
+                        'Getting Started'=>'getting-started',
+                        'Query Builder'=>'query-builder',
+                        'Repository'=>'repository',
+                        'Entity'=>'entity',
+                    ]
+                ],
+                'Universe ORM'=>[
+                    'uri'=>'universe-orm',
+                    'sub'=>[
+                        'Getting Started'=>'getting-started',
+                        'Database Connection'=>'database-connection',
+                        'Repository'=>'repository',
+                        'Entity'=>'entity',
+                    ]
+                ],
+                'Packages'=>[
+                    'uri'=>'packages',
+                    'sub'=>[
+                        'Asteroids'=>'asteroids',
+                        'Shield'=>'shield',
+                        'Signalling'=>'signalling',
+                        'Starship'=>'starship',
+                        'Telescope' => 'telescope',
+                        'Template Engine' => 'template-engine'
+                    ]
+                ],
+
+
             ]
         ];
     }
